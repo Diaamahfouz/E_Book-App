@@ -1,3 +1,4 @@
+import 'package:e_book/constants/constants.dart';
 import 'package:e_book/features/splash/presentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -10,8 +11,10 @@ class EBookApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp(
-      home: SplashView(),
+    return  GetMaterialApp(
+      theme: ThemeData().copyWith(scaffoldBackgroundColor:kPrimarycolor),
+      debugShowCheckedModeBanner: false,
+      home:const SplashView(),
     );
   }
 }
