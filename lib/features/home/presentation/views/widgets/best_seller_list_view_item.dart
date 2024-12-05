@@ -25,7 +25,9 @@ class BestSellerListViewItem extends StatelessWidget {
             ),
           ),
           Column(
-            children: [],
+            children: [
+              
+            ],
           )
         ],
       ),
