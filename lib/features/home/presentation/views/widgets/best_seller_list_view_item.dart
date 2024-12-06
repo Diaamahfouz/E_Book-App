@@ -1,3 +1,4 @@
+import 'package:e_book/constants/constants.dart';
 import 'package:e_book/core/utils/assets_data.dart';
 import 'package:e_book/core/utils/styles.dart';
 import 'package:flutter/material.dart';
@@ -29,16 +30,41 @@ class BestSellerListViewItem extends StatelessWidget {
             width: 30,
           ),
           Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
                 width: MediaQuery.of(context).size.width * .5,
-                child: const Text(
+                child: Text(
                   'Harry Potter and the Goblet Of Fire',
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
-                  style: Styles.textStyle20,
+                  style: Styles.textStyle20.copyWith(
+                    fontFamily: kGtSectraFine,
+                  ),
                 ),
-              )
+              ),
+              const SizedBox(
+                width: 5,
+              ),
+              Text(
+                'J . K Rowling',
+                style: Styles.textStyle14.copyWith(
+                  color: Colors.grey,
+                ),
+              ),
+              const SizedBox(
+                width: 5,
+              ),
+              Row(
+                children: [
+                  Text(
+                    '19.99 \$',
+                    style: Styles.textStyle20.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
             ],
           )
         ],
