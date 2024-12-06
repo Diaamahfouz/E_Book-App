@@ -1,6 +1,7 @@
 import 'package:e_book/constants/constants.dart';
 import 'package:e_book/core/utils/assets_data.dart';
 import 'package:e_book/core/utils/styles.dart';
+import 'package:e_book/features/home/presentation/views/widgets/book_rating.dart';
 import 'package:flutter/material.dart';
 
 class BestSellerListViewItem extends StatelessWidget {
@@ -44,7 +45,7 @@ class BestSellerListViewItem extends StatelessWidget {
                 ),
               ),
               const SizedBox(
-                width: 5,
+                height: 5,
               ),
               Text(
                 'J . K Rowling',
@@ -53,7 +54,7 @@ class BestSellerListViewItem extends StatelessWidget {
                 ),
               ),
               const SizedBox(
-                width: 5,
+                height: 5,
               ),
               Row(
                 children: [
@@ -63,6 +64,10 @@ class BestSellerListViewItem extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
+                  const SizedBox(
+                    width: 40,
+                  ),
+                  const BookRating(),
                 ],
               ),
             ],
