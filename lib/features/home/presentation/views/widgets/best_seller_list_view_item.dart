@@ -1,4 +1,5 @@
 import 'package:e_book/core/utils/assets_data.dart';
+import 'package:e_book/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 
 class BestSellerListViewItem extends StatelessWidget {
@@ -24,9 +25,20 @@ class BestSellerListViewItem extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(
+            width: 30,
+          ),
           Column(
             children: [
-              
+              SizedBox(
+                width: MediaQuery.of(context).size.width * .5,
+                child: const Text(
+                  'Harry Potter and the Goblet Of Fire',
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: Styles.textStyle20,
+                ),
+              )
             ],
           )
         ],
