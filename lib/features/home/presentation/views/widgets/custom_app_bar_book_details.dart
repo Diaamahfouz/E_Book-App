@@ -1,6 +1,7 @@
 import 'package:e_book/core/utils/assets_data.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:go_router/go_router.dart';
 
 class CustomAppBarBookDetails extends StatelessWidget {
   const CustomAppBarBookDetails({super.key});
@@ -11,7 +12,9 @@ class CustomAppBarBookDetails extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         IconButton(
-          onPressed: () {},
+          onPressed: () {
+            GoRouter.of(context).pop();
+          },
           icon: const Icon(
             FontAwesomeIcons.xmark,
             size: 32,
@@ -19,7 +22,7 @@ class CustomAppBarBookDetails extends StatelessWidget {
         ),
         Image.asset(
           AssetsData.logo,
-          height: 150,
+          height: 120,
         ),
         IconButton(
           onPressed: () {},
