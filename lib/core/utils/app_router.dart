@@ -4,12 +4,13 @@ import 'package:e_book/features/splash/presentation/views/splash_view.dart';
 import 'package:go_router/go_router.dart';
 
 abstract class AppRouter {
+  static const kSplash = '/';
   static const kHomeView = '/homeView';
   static const kBookDetails = '/bookDetails';
   static final router = GoRouter(
     routes: [
       GoRoute(
-        path: '/',
+        path: kSplash,
         builder: (context, state) => const SplashView(),
       ),
       GoRoute(
