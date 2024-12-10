@@ -1,5 +1,6 @@
 import 'package:e_book/core/utils/styles.dart';
 import 'package:e_book/features/home/presentation/views/widgets/book_rating.dart';
+import 'package:e_book/features/home/presentation/views/widgets/books_action.dart';
 import 'package:e_book/features/home/presentation/views/widgets/custom_app_bar_book_details.dart';
 import 'package:e_book/features/home/presentation/views/widgets/custom_book_item.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +23,7 @@ class BookDetailsViewBody extends StatelessWidget {
             child: const CustomBookImage(),
           ),
           const SizedBox(
-            height: 20,
+            height: 15,
           ),
           const Text(
             'The Jungle Book ',
@@ -40,9 +41,18 @@ class BookDetailsViewBody extends StatelessWidget {
             ),
           ),
           const SizedBox(
-            height: 10,
+            height: 5,
           ),
           const BookRating(),
+          const SizedBox(
+            height: 15,
+          ),
+          const Padding(
+            padding: EdgeInsets.symmetric(
+              horizontal: 30,
+            ),
+            child: BooksAction(),
+          ),
         ],
       ),
     );
