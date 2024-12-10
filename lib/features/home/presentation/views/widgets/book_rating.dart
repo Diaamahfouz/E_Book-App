@@ -13,7 +13,7 @@ class BookRating extends StatelessWidget {
         const Icon(
           FontAwesomeIcons.solidStar,
           color: Colors.amber,
-          size: 18,
+          size: 16,
         ),
         const SizedBox(
           width: 8,
